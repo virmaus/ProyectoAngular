@@ -1,4 +1,5 @@
 <h1> {{title}}</h1>
+<header>
 <ul>
     <li>
         <a [routerLink]="['/sobre-mi']">Sobre Mi</a>
@@ -10,7 +11,15 @@
         <a [routerLink]="['/contacto']">Contacto</a>
     </li>
 </ul>
-<div>
-    <p>Algun parrafo </p>
-</div>
-<router-outlet></router-outlet>
+</header>
+
+<section>
+    <div>
+        <p>Algun parrafo </p>
+    </div>
+    <router-outlet></router-outlet>
+</section>
+
+<footer>
+    Portafolio Matias Contreras
+</footer>
