@@ -1,4 +1,16 @@
-<h1>Contador: {{contador}}</h1>
-<br/>
-<button (click)="add()">+1</button>
-<button (click)="remove()">-1</button>
+<h1> {{title}}</h1>
+<ul>
+    <li>
+        <a [routerLink]="['/sobre-mi']">Sobre Mi</a>
+    </li>
+    <li>
+        <a [routerLink]="['/proyectos']">Proyectos</a>
+    </li>
+    <li>
+        <a [routerLink]="['/contacto']">Contacto</a>
+    </li>
+</ul>
+<div>
+    <p>Algun parrafo </p>
+</div>
+<router-outlet></router-outlet>
