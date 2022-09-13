@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 mt-3">
+            <h1 style="color: white;">{{titulo}}</h1>
+            <div class="card mb-3" *ngFor="let curso of cursos">
+                <div class="card-body">
+                    <h5 class="card-title">{{curso.nombre}}</h5>
+                     <p class="card-text">{{curso.fecha}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</div>
